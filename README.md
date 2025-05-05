@@ -11,7 +11,7 @@ I'm a passionate **Spring Backend Developer** with a love for solving complex pr
 **University of Seoul**, Computer Science and Engineering          [2019 ~ Present]
 
 # Skills
-![chan's GitHub stats](https://github-readme-stats.vercel.app/api?username=longrunpc&show_icons=true&theme=radical)
+![chan's GitHub stats](https://github-readme-stats.vercel.app/api?username=longrunpc&include_orgs=true&show_icons=true&theme=radical)
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=pcjmo4050)](https://solved.ac/pcjmo4050/)
 
 ### Platforms & Languages
@@ -22,8 +22,6 @@ I'm a passionate **Spring Backend Developer** with a love for solving complex pr
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?&style=for-the-badge&logo=JavaScript&logoColor=white)
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26.svg?&style=for-the-badge&logo=HTML5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6.svg?&style=for-the-badge&logo=CSS3&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1.svg?&style=for-the-badge&logo=MySQL&logoColor=white)
 ![AWS](https://img.shields.io/badge/amazon%20aws-%23232F3E.svg?&style=for-the-badge&logo=amazon%20aws&logoColor=white)
 
