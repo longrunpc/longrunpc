@@ -12,7 +12,7 @@ I'm a passionate **Spring Backend Developer** with a love for solving complex pr
 
 # Skills
 ![chan's GitHub stats](https://github-readme-stats.vercel.app/api?username=longrunpc&include_orgs=true&show_icons=true&theme=radical)
-[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=pcjmo4050)](https://solved.ac/pcjmo4050/)
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=longrunpc)](https://solved.ac/longrunpc/)
 
 ### Platforms & Languages
 ![C](https://img.shields.io/badge/C-A8B9CC.svg?&style=for-the-badge&logo=Java&logoColor=white)
