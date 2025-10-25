@@ -96,7 +96,7 @@ Currently focusing on **system architecture, distributed communication (gRPC/Kaf
   - Ensured stable operation with **₩80,000/month AWS cost**.  
 
 - **Links:**  
-  [📱 Google Play](https://play.google.com/store/apps/details?id=com.ummgoban.momchanpick) · [🍏 App Store](https://apps.apple.com/kr/app/%EB%A7%98%EC%B0%AC%ED%94%BD/id6738623251) · [💻 GitHub](https://github.com/ummgoban)
+  [Google Play](https://play.google.com/store/apps/details?id=com.ummgoban.momchanpick) · [App Store](https://apps.apple.com/kr/app/%EB%A7%98%EC%B0%AC%ED%94%BD/id6738623251) · [GitHub](https://github.com/ummgoban)
 
 ---
 
