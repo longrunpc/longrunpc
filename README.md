@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Chan Park  
 
-I'm a passionate **Spring Backend Developer** who loves solving complex problems and building scalable, efficient applications.  
+I'm a passionate **Backend Developer** who loves solving complex problems and building scalable, efficient applications.  
 Currently focusing on **system architecture, distributed communication (gRPC/Kafka)**, and **DevOps automation**.
 
 ---
