@@ -1,8 +1,13 @@
-# 👋 Hi, I'm Chan Park  
+# 👋 안녕하세요, 상황에 맞는 최적의 솔루션을 고민하는 개발자 박찬입니다.
 
-I'm a passionate **Backend Developer** who loves solving complex problems and building scalable, efficient applications.  
-Currently focusing on **system architecture, distributed communication (gRPC/Kafka)**, and **DevOps automation**.
+> **"단순한 구현을 넘어, 근거 있는 기술 선택으로 서비스의 가용성과 유지보수성을 높이는 데 집중합니다."**
 
+### 🧠 Introduction
+* **최적의 아키텍처 고민**: 새로운 기술을 빠르게 습득하여 AI 기술을 실제 서비스에 접목하고, 제한된 비용 내에서 알맞은 인프라 환경을 구축하며 최적의 시스템 아키텍처를 설계한 경험이 있습니다.
+* **시스템 안정성 및 일관성**: '맘찬픽'의 레거시 코드를 유지보수하며, 서로 다른 두 앱을 통합하는 과정에서 구조적 일관성과 환경 분리를 통해 시스템 안정성을 확보했습니다.
+* **데이터 기반의 성능 최적화**: 위치 기반 가게 리스트 구현 시 **PostgreSQL 공간 인덱스(Spatial Index)**를 도입하여 성능을 극대화하고, 기존 Polling 방식을 **커스텀 gRPC**로 전환하여 네트워크 오버헤드와 지연 시간을 최소화했습니다.
+* **지속 가능한 개발 환경**: 클린 코드와 테스트 코드 작성을 원칙으로 삼으며, Swagger와 Postman을 통한 철저한 문서화로 동료들이 이해하기 쉬운 협업 환경을 만드는 데 기여합니다.
+* **장애 대응 및 가용성**: k6 부하 테스트를 통한 병목 지점 개선과 실시간 모니터링을 통해 서비스 가용성을 강화합니다.
 ---
 
 ## 🎓 Education  
@@ -49,50 +54,35 @@ Currently focusing on **system architecture, distributed communication (gRPC/Kaf
 
 ## Projects  
 
-### Castle Coder  
-> AI-powered Secure Code Copilot for VS Code  
+### Castle Coder  > **AI 기반 보안 코드 리팩토링 VS Code 플러그인** | *2025.03 ~ 2025.06*
 
-- **Overview:**  
-  Developed a **VS Code plugin** that uses AI chat to suggest secure code and refactor vulnerabilities in real time.  
-
-- **Role:** Team Lead & Backend Developer  
-  - Designed **Spring Boot service architecture** and implemented **gRPC/SSE streaming APIs**.  
-  - Customized **RunPod vLLM gRPC communication** for serverless GPU deployment.  
-  - Built **OWASPCodeEval**, an automated security benchmark based on **OWASP Top 10**.  
-  - Integrated AI streaming with the frontend VS Code Extension (React + TypeScript).  
-  - Conducted **k6 performance tests** and **Prometheus/Grafana monitoring**.  
-
+- **개요:** AI 채팅을 활용하여 실시간으로 보안 코드를 제안하고 코드의 취약 구간을 안전하게 리팩토링하는 VS Code 플러그인입니다.
+- **역할: 팀장 및 백엔드 개발자**
+  - **Spring Boot 서비스 아키텍처** 설계 및 **gRPC/SSE 스트리밍 API** 구현.
+  - 서버리스 GPU 배포를 위해 **RunPod vLLM gRPC 통신** 커스터마이징.
+  - **OWASP Top 10** 기반의 자동화 보안 벤치마크 도구인 **OWASPCodeEval** 구축.
+  - **k6 부하 테스트** 및 **Prometheus/Grafana** 모니터링 수행.
+- **성과**:
+  - gRPC 스트리밍 도입으로 응답 지연 시간(Latency) **50% 단축**.
+  - 정량적 평가 지표를 갖춘 종합적인 AI 기반 보안 코딩 시스템을 구축했습니다
 - **Tech Stack:**  
   Spring Boot · gRPC · PostgreSQL · Redis · Docker · AWS · RunPod · TypeScript · React  
-
-- **Achievements:**  
-  - Reduced latency by **50%** using gRPC streaming.  
-  - Built a complete **AI-assisted secure coding system** with quantitative evaluation metrics.  
 
 - **Links:**  
   [GitHub](https://github.com/castle-coder) | [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=YUCHANOH.castle-coder)
 
 ---
 ### MomChanPick  
-> O2O-based Side Dish Reservation & Pickup Platform  
+> **O2O 기반 반찬 예약 및 픽업 플랫폼** | *2025.01 ~ 2025.12*
 
-- **Overview:**  
-  Built an **O2O mobile service** that enables users to pre-order side dishes from local stores and pick them up offline.  
-  Focused on backend architecture improvement, performance optimization, and service reliability.
-
-- **Role:** Backend Developer  
-  - Restructured **domain models and ERD** for better maintainability.  
-  - Implemented **discount, reservation, and review services**.  
-  - Optimized performance with **geospatial indexing** and **cursor-based pagination**.  
-  - Conducted **k6 load tests** and **Prometheus/Grafana monitoring**.  
-  - Automated deployment via **GitHub Actions (CI/CD)** and AWS infrastructure.  
-
+- **개요:** 지역 반찬가게 예약 주문 및 오프라인 픽업 서비스입니다. 백엔드 아키텍처 개선 및 성능 최적화에 주력했습니다.
+- **역할: 백엔드 개발자**
+  - 유지보수성 향상을 위해 **도메인 모델 및 ERD 재설계**.
+  - **공간 인덱스(Geospatial Indexing)** 및 커서 기반 페이지네이션을 통한 성능 최적화.
+  - **GitHub Actions(CI/CD)** 및 AWS 인프라를 통한 배포 자동화.
+- **성과**: 공간 인덱스 도입으로 쿼리 성능 **약 40% 향상** 및 월 8만 원 이하의 비용으로 안정적 운영 달성.
 - **Tech Stack:**  
   Spring Boot · JPA · MySQL · Redis · Docker · AWS · Prometheus · Grafana · k6 · React Native  
-
-- **Achievements:**  
-  - Improved query performance by **~40%** through spatial indexing.  
-  - Ensured stable operation with **₩80,000/month AWS cost**.  
 
 - **Links:**  
   [Google Play](https://play.google.com/store/apps/details?id=com.ummgoban.momchanpick) · [App Store](https://apps.apple.com/kr/app/%EB%A7%98%EC%B0%AC%ED%94%BD/id6738623251) · [GitHub](https://github.com/ummgoban)
@@ -100,11 +90,13 @@ Currently focusing on **system architecture, distributed communication (gRPC/Kaf
 ---
 
 ### QooTalk *(In Progress)*
-> Real-time Chat Service using Kafka & Redis  
+> **사내용 실시간 채팅 서비스**
 
-- **Overview:**  
-  Currently developing a **real-time chat platform** focusing on scalability and modular architecture.  
-  Designed with **multi-module structure** to ensure clear separation of concerns and maintainability.
+- **개요:** 확장성과 유지보수성을 위해 **멀티 모듈 구조**로 설계 중인 실시간 채팅 플랫폼입니다.
+- **작업내용**
+  - **Kafka 기반의 실시간 메시지 스트리밍** 구현.
+  - 성능 향상을 위해 **Redis 캐싱 및 Pub/Sub** 연동.
+- **Tech Stack**: Java 21 · Spring Boot · Kafka · Redis · Docker Compose
 
 - **Role:** Backend Developer  
   - Implementing **Kafka-based real-time message streaming**.  
