@@ -5,7 +5,7 @@
 ### 🧠 Introduction
 * **최적의 아키텍처 고민**: 새로운 기술을 빠르게 습득하여 AI 기술을 실제 서비스에 접목하고, 제한된 비용 내에서 알맞은 인프라 환경을 구축하며 최적의 시스템 아키텍처를 설계한 경험이 있습니다.
 * **시스템 안정성 및 일관성**: '맘찬픽'의 레거시 코드를 유지보수하며, 서로 다른 두 앱을 통합하는 과정에서 구조적 일관성과 환경 분리를 통해 시스템 안정성을 확보했습니다.
-* **데이터 기반의 성능 최적화**: 위치 기반 가게 리스트 구현 시 **PostgreSQL 공간 인덱스(Spatial Index)**를 도입하여 성능을 극대화하고, 기존 Polling 방식을 **커스텀 gRPC**로 전환하여 네트워크 오버헤드와 지연 시간을 최소화했습니다.
+* **데이터 기반의 성능 최적화**: 위치 기반 가게 리스트 구현 시 PostgreSQL 공간 인덱스(Spatial Index)를 도입하여 성능을 극대화하고, 기존 Polling 방식을 커스텀하여 gRPC로 전환해 네트워크 오버헤드와 지연 시간을 최소화했습니다.
 * **지속 가능한 개발 환경**: 클린 코드와 테스트 코드 작성을 원칙으로 삼으며, Swagger와 Postman을 통한 철저한 문서화로 동료들이 이해하기 쉬운 협업 환경을 만드는 데 기여합니다.
 * **장애 대응 및 가용성**: k6 부하 테스트를 통한 병목 지점 개선과 실시간 모니터링을 통해 서비스 가용성을 강화합니다.
 ---
@@ -89,20 +89,17 @@
 
 ---
 
-### QooTalk *(In Progress)*
+### QooTalk
 > **사내용 실시간 채팅 서비스**
 
 - **개요:** 확장성과 유지보수성을 위해 **멀티 모듈 구조**로 설계 중인 실시간 채팅 플랫폼입니다.
 - **작업내용**
-  - **Kafka 기반의 실시간 메시지 스트리밍** 구현.
-  - 성능 향상을 위해 **Redis 캐싱 및 Pub/Sub** 연동.
-- **Tech Stack**: Java 21 · Spring Boot · Kafka · Redis · Docker Compose
-
-- **Role:** Backend Developer  
-  - Implementing **Kafka-based real-time message streaming**.  
-  - Integrating **Redis caching and Pub/Sub** for efficient data flow and performance.
-
-- **Tech Stack:**  
-  Java 21 · Spring Boot · Kafka · Redis · Docker Compose
-
+  - **멀티 모듈 아키텍처 설계**: Domain, Application, Infrastructure, Presentation 계층으로 분리한 멀티 모듈 구조를 설계하여 코드 간 결합도를 낮추고 유지보수성 향상.
+  - **고성능 메시징 시스템 구축**: **Kafka**를 통해 메시지 전송 및 읽음 이벤트를 비동기 처리하고, **Redis Pub/Sub** 기반의 fan-out 구조를 구현하여 멀티 인스턴스 환경에서의 실시간 브로드캐스팅 보장.
+  - **실시간 상태 관리 및 스트리밍**: **SSE(Server-Sent Events)** 기반의 실시간 구독 기능과 **Redis Presence**를 활용한 사용자 온라인 상태 실시간 동기화 구현.
+  - **시스템 최적화 및 정합성 확보**: 유니크 키 적용을 통한 데이터 정합성 강화 및 인덱스 성능 최적화. 요청 처리와 이벤트 전파 로직을 분리하여 응답 지연 시간(Latency) 단축.
+  - **통합 테스트 환경 구축**: **Testcontainers**를 도입하여 PostgreSQL, Redis, Kafka, LocalStack(S3) 등 실제 인프라와 동일한 환경에서 동작하는 신뢰성 높은 테스트 코드 작성.
+- **Tech Stack**: Java 21 · Spring Boot · PostgreSQL · Redis · Kafka · SSE · Docker · AWS S3 · LocalStack
+- **Links:**
+  · [GitHub](https://github.com/longrunpc/qootalk)
 ---
